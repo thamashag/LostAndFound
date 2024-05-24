@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LostAndFound"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:id="@+id/postLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/textPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post:"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
+
+            <RadioButton
+                android:id="@+id/radioLost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lost"
+                android:checked="true"
+                android:buttonTint="@android:color/holo_blue_light"/>
+
+            <RadioButton
+                android:id="@+id/radioFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Found"
+                android:buttonTint="@android:color/holo_blue_light"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!-- Name label and EditText -->
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_below="@id/postLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName"
+        android:layout_marginTop="4dp"
+        android:hint="Name"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Phone label and EditText -->
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone:"
+        android:layout_below="@id/editName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPhone"
+        android:layout_marginTop="4dp"
+        android:hint="Phone"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Description label and EditText -->
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:layout_below="@id/editPhone"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/textDescription"
+        android:layout_marginTop="4dp"
+        android:hint="Description"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Date label and EditText -->
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:layout_below="@id/editDescription"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDate"
+        android:layout_marginTop="4dp"
+        android:hint="Date"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Location label and EditText -->
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:layout_below="@id/editDate"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLocation"
+        android:layout_marginTop="4dp"
+        android:hint="Location"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLocation"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+</RelativeLayout>
+
