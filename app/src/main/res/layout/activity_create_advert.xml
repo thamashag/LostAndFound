@@ -156,15 +156,24 @@
         android:hint="Location"
         android:background="@android:drawable/editbox_background"/>
 
+    <Button
+        android:id="@+id/btnGetCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Get Current Location" />
+
     <!-- Save Button -->
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editLocation"
+        android:layout_below="@id/btnGetCurrentLocation"
         android:layout_centerHorizontal="true"
         android:text="Save"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="5dp"
         android:backgroundTint="@android:color/holo_blue_light"/>
 
 </RelativeLayout>

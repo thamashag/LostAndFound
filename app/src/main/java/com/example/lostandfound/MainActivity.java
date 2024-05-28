@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnCreateAdvert = findViewById(R.id.btnCreateAdvert);
         Button btnShowItems = findViewById(R.id.btnShowItems);
+        Button btnShowMap = findViewById(R.id.btnShowMap);
+
+
 
         btnCreateAdvert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,5 +39,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ShowItemsActivity.class));
             }
         });
+
+        btnShowMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ShowMapActivity.class));
+            }
+        });
     }
-}
+
+
+    }
